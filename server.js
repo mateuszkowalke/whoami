@@ -23,6 +23,7 @@ app.get("/", function (req, res) {
 app.get("/api/hello", function (req, res) {
   res.json({greeting: 'hello API'});
 });
+app.get("/api/whoami", (req, res) => console.log(req));
 
 
 
